@@ -1,0 +1,28 @@
+<?php
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Zend Framework sur SwissMDB');
+
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <link href="css/animate.css" rel="stylesheet">
+    <script src="css/min.js"></script>
+    <script src="css/jquery.lettering.js"></script>
+    <script src="css/jquery.textillate.js"></script>
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headTitle(); ?>
+   </head>
+<body>
+    <h1 class="tlt">SwissMDB - Application web</h1>
+<script>
+	$(function () {
+	    $('.tlt').textillate();
+	})
+</script>
+    <div id="content">
+        <h1><?php echo $this->escape($this->title); ?></h1>
+        <?php echo $this->layout()->content; ?>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?php
+$this->title = "Supprimer un medicament";
+$this->headTitle($this->title);
+?>
+<p>Êtes-vous sûr de vouloir supprimer 
+    '<?php echo $this->escape($this->Medicaments['MED_NOMCOMMERCIAL']); ?>' de
+    '<?php echo $this->escape($this->Medicaments['FAM_CODE']); ?>' ?
+</p>
+<form action="<?php echo $this->url(array('action'=>'supprimer')); ?>" method="post">
+<div>
+    <input type="hidden" name="id" value="<?php echo $this->Medicaments['MED_DEPOLEGAL']; ?>" />
+    <input type="submit" name="supprimer" value="Oui" />
+    <input type="submit" name="supprimer" value="Non" />
+</div>
+</form>

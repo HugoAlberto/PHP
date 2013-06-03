@@ -1,0 +1,69 @@
+body,html {
+    margin:0;
+    font-family: Verdana,sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #68A8D9;
+}
+
+a {
+    color: #68A8D9;
+}
+#content{
+    margin:10px;
+}
+/* Table */
+table{
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+    width:100%;
+}
+table th{
+    border-width: 1px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table td{
+    border-width: 1px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+
+/* style form */
+form dt {
+    width: 100px;
+    display: block;
+    float: left;
+    clear: left;
+}
+
+form dd {
+    margin-left: 0;
+    float: left;
+}
+
+form #submitbutton {
+    margin-left: 100px;
+}
+.haut{
+    font-size:2em;
+    color:white;
+    display:block;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100px;
+    text-align:center;
+    background-color:#696969;
+    text-shadow: 9px 5px 30px #000000;
+        filter: dropshadow(color=#000000, offx=9, offy=5);
+}

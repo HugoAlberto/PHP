@@ -1,0 +1,33 @@
+<?php
+$this->title = 'Mes Medicaments';
+$this->headTitle($this->title);
+?>
+<p><a href="<?php echo $this->url(array('controller'=>'index',
+        'action'=>'ajouter'));?>">Ajouter de nouveaux Medicaments</a></p>
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Code Famille</th>       
+	<th>Composition</th>
+        <th>Effets</th>
+        <th>Contre-Indication</th>
+        <th>Prix Échantillon</th>
+        <th>&nbsp;</th>
+    </tr>
+<?php foreach($this->Medicaments as $Medicaments) : ?>
+    <tr>
+        <td><?php echo $this->escape($Medicaments->MED_NOMCOMMERCIAL);?></td>
+        <td><?php echo $this->escape($Medicaments->FAM_CODE);?></td>
+        <td><?php echo $this->escape($Medicaments->MED_COMPOSITION);?></td>
+        <td><?php echo $this->escape($Medicaments->MED_EFFETS);?></td>
+        <td><?php echo $this->escape($Medicaments->MED_CONTREINDIC);?></td>
+        <td><?php echo $this->escape($Medicaments->MED_PRIXECHANTILLON);?></td>
+        <td>
+            <a href="<?php echo $this->url(array('controller'=>'index',
+                'action'=>'modifier', 'id'=>$album->id));?>">Modifier</a>
+            <a href="<?php echo $this->url(array('controller'=>'index',
+                'action'=>'supprimer', 'id'=>$album->id));?>">Supprimer</a>
+        </td>
+    </tr>
+<?php endforeach; ?>
+</table>

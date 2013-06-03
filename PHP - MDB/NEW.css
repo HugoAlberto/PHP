@@ -1,0 +1,34 @@
+body{
+	background:#F0F0F0;
+	color:#3d3d3d;
+	font-family: verdana,arial,sans-serif;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+h1{
+	text-shadow: 2px 2px #FFF;
+}
+table{
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	width:100%;
+}
+table th{
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table td{
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
